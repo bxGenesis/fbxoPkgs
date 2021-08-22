@@ -8,8 +8,8 @@ function echoOut { echo "$@"; }
 function bisosPkgInstall {
 
     if [ $# -ne 2 ] ; then
-	echoErr "Bad Nu Of Args -- Expected 2 -- Got $#"
-	return
+        echoErr "Bad Nu Of Args -- Expected 2 -- Got $#"
+        return
     fi
 
     local virtEnv="$1"
@@ -17,8 +17,8 @@ function bisosPkgInstall {
 
     
     if [ "$( type -t deactivate )" == "function" ] ; then
-	echoAnn "Deactivating"
-	deactivate
+        echoAnn "Deactivating"
+        deactivate
     fi
 
     source ${virtEnv}/bin/activate

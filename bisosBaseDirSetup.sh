@@ -19,7 +19,7 @@ function bisosBaseDirSetup {
     local deRunRootDir="/de/run"        
 
     if [ $( type -t deactivate ) == "function" ] ; then
-	deactivate
+        deactivate
     fi
 
     sudo -H pip install --no-cache-dir --upgrade pip
